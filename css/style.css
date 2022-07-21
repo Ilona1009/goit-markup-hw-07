@@ -345,7 +345,7 @@ fill: currentColor;
     margin-bottom: 10px;
   }
   
-  .subtitle-portfolio {
+  .cards-work__subtitle {
     color: var(--brand-color);
     font-weight: 700;
     font-size: 18px;
@@ -361,7 +361,7 @@ fill: currentColor;
     line-height: 1.7;
   }
   
-  .desc {
+  .cards-work__desc {
     color: var(--contact-color);
     font-size: 16px;
     line-height: 1.8;
@@ -370,7 +370,7 @@ fill: currentColor;
   }
   
   
-  .title-card{
+  .cards-work__title{
   padding: 20px 24px 20px 24px;
   border-left: 1px solid var(--border-card);
   border-right: 1px solid var(--border-card);
@@ -537,7 +537,7 @@ border-color: var(--accent-color);
   /* нaвигация */
   
   
-  .button-navigate {
+  .button-box__navigate {
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -550,8 +550,8 @@ border-color: var(--accent-color);
     transition: color var(--animacia), background-color var(--animacia), 
     box-shadow var(--animacia),border-radius var(--animacia) ;
   }
-  .button-navigate:hover,
-  .button-navigate:focus {
+  .button-box__navigate:hover,
+  .button-box__navigate:focus {
     background-color: var(--accent-color);
     color: var(--wite-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -572,7 +572,7 @@ border-radius: 4px;
     }
     
   
-  .btn:not(:last-child){
+  .button-box__btn:not(:last-child){
     margin-right: 8px;
   }
   
@@ -591,20 +591,20 @@ border-radius: 4px;
   }
    /* portfolio page */
 
-    .card{
+    .cards-work__card{
       text-decoration: none;
       display: block;
       transition: box-shadow var(--animacia);
   
     }
 
-    .card-thumb{
+    .cards-work__thumb{
       position: relative;
       overflow: hidden;
     }
 
 
-    .card-overlay{
+    .cards-work__overlay{
       position: absolute;
       content: "";
       background-color: var(--accent-color);
@@ -618,7 +618,7 @@ border-radius: 4px;
     
     }
 
-    .thumb-text{
+    .cards-work__thumb-text{
       font-size: 18px;
       line-height: 1.5;
       letter-spacing: 0.03em;
@@ -626,13 +626,13 @@ border-radius: 4px;
       padding: 63px 24px;
     }
 
-    .card:hover,
-    .card:focus{
+    .cards-work__card:hover,
+    .cards-work__card:focus{
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     }
 
-    .card:hover .card-overlay{
+    .cards-work__card:hover .cards-work__overlay{
       transform: translateY(0);
 
     }
