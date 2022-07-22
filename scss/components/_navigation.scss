@@ -16,22 +16,32 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: color var(--animacia);
+
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &.current {
+      color: var(--accent-color);
+    }
   }
-  .nav-item__list:hover,
-  .nav-item__list:focus {
-    color: var(--accent-color);
-  }
-  .nav-item__list.current {
-    color: var(--accent-color);
-  }
+
 
   .nav-footer__contact-map{
     color: var(--wite-color);
-    margin-bottom: 9px;
   }
   .nav-footer__contact-mail {
     color: var(--white-transparent);
     text-decoration: none;
+  }
+
+  .nav-footer__contact-mail--bottom{
+    margin-bottom: 9px;
+  }
+
+  .nav-footer__contact-map--bottom{
+    margin-top: 20px;
     margin-bottom: 9px;
   }
 

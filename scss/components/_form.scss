@@ -5,7 +5,6 @@
     }
     
     .form-field{
-    
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -15,11 +14,11 @@
     letter-spacing: 0.01em;
     color: var(--contact-color);
     }
+
     
     .form-modal__field--top{
       margin-top: 12px;
     }
-    
     
     
     .form-modal__inner{
@@ -40,6 +39,17 @@
     border-radius: 4px;
     cursor: pointer;
     outline: none;
+
+
+    &:focus ~.form-modal__icon,
+    &:hover ~.form-modal__icon{
+      fill: var(--accent-color);
+    }
+
+    &:hover,
+    &:focus{
+      border-color: var(--accent-color);
+    }
     }
     
     .form-modal__input--bottom{
@@ -54,15 +64,6 @@
     transition: fill var(--animacia), border-color var(--animacia);
     }
     
-    .form-modal__input:focus ~.form-modal__icon,
-    .form-modal__input:hover ~.form-modal__icon{
-      fill: var(--accent-color);
-    }
-    .form-modal__input:hover,
-    .form-modal__input:focus{
-      border-color: var(--accent-color);
-    }
-    
     
     .textarea__form{
       resize: none;
@@ -70,6 +71,12 @@
       padding-left: 10px;
       width: 448px;
       height: 120px;
+    }
+
+    .form-textarea__comment:hover,
+    .form-textarea__comment:focus{
+      border-color: var(--accent-color);
+      
     }
     
     
@@ -81,11 +88,7 @@
     transition: border-color var(--animacia);
     outline: none;
     }
-    .form-textarea__comment:hover,
-    .form-textarea__comment:focus{
-      border-color: var(--accent-color);
-      
-    }
+    
     
     .textarea--bottom{
     padding-bottom: 4px;

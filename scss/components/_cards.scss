@@ -11,6 +11,19 @@
     display: block;
     transition: box-shadow var(--animacia);
 
+
+    &:hover,
+    &:focus{
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+
+    &:hover .cards-work__overlay{
+      transform: translateY(0);
+    }
+    
+
   }
 
   .cards-work__thumb{
@@ -41,16 +54,6 @@
     padding: 63px 24px;
   }
 
-  .cards-work__card:hover,
-  .cards-work__card:focus{
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  }
-
-  .cards-work__card:hover .cards-work__overlay{
-    transform: translateY(0);
-  }
-  
 
 
 .cards-work{

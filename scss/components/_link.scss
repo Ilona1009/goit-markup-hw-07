@@ -18,15 +18,20 @@
     justify-content: center;
     transition: fill var(--animacia);
     transition: background-color var(--animacia);
-}
-.team-link__links:hover, 
-.team-link__links:focus {
+
+
+  &:hover, 
+  &:focus {
   fill: var(--wite-color);
   background-color: var(--accent-color);
- }
-.team-link__links:not(:last-child){
+  }
+
+
+  &:not(:last-child){
   margin-right: 10px;
+  }
 }
+
 
 .client-list__link{
     display: flex;
@@ -39,13 +44,16 @@
       transition: color var(--animacia);
       border: 1px solid var(--link-color);
       border-radius: 4px;
+
+
+      &:hover,
+      &:focus{
+        fill:var(--accent-color);
+      border-color: var(--accent-color);
+      }
     }
 
-    .client-list__link:hover,
-.client-list__link:focus{
-  fill:var(--accent-color);
-border-color: var(--accent-color);
-}
+
 
 .footer-svg__link{
     display: flex;
@@ -64,15 +72,19 @@ border-color: var(--accent-color);
     justify-content: center;
     transition: fill var(--animacia), 
     background-color var(--animacia);
-}
-.footer-svg__links:hover, 
-.footer-svg__links:focus {
+
+
+    &:hover, 
+    &:focus {
   fill: var(--wite-color);
   background-color: var(--accent-color);
 }
+}
+
 .footer-svg__link--right:not(:last-child){
   margin-right: 10px;
 }
+
 
 .checkbox__link{
     color: var(--accent-color);

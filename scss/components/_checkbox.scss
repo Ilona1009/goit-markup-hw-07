@@ -17,6 +17,7 @@
       user-select: none;
       cursor: pointer;
     }
+    
     .checkbox__input{
       white-space: nowrap;
       width: 1px;
@@ -27,6 +28,12 @@
       clip: rect(0 0 0 0);
       clip-path: inset(50%);
       margin: -1px;
+
+
+      &:checked + .checkbox__svg{
+        outline: var(--accent-color);
+        background-color: var(--accent-color);
+       }
     }
     
     
@@ -46,10 +53,7 @@
       transition: fill var(--animacia);
     }
     
-    .checkbox__input:checked + .checkbox__svg{
-      outline: var(--accent-color);
-      background-color: var(--accent-color);
-     }
+    
     
     .checkbox__contract{
       display: inline-block;
