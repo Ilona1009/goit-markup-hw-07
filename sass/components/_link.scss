@@ -6,6 +6,7 @@
     display: flex;
     margin-top: 16px;
     justify-content: center;
+
   }
   .team-link__links{
     display: flex;
@@ -19,6 +20,10 @@
     transition: fill var(--animacia);
     transition: background-color var(--animacia);
 
+    &:last-of-type{
+      margin-right: 10px;
+      }
+
 
   &:hover, 
   &:focus {
@@ -27,9 +32,6 @@
   }
 
 
-  &:not(:last-child){
-  margin-right: 10px;
-  }
 }
 
 
