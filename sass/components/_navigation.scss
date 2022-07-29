@@ -1,7 +1,21 @@
-.nav{
-    display:flex;
-    align-items: center;
-  }
+
+    .nav{
+      display:flex;
+      align-items: center; 
+
+      @media screen and (max-width: 480px){
+        display: none;
+      } 
+    }
+    
+   .nav-button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+   }
+    
 
   
   .nav-item {

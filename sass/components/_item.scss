@@ -1,9 +1,19 @@
 .item-contact{
+  margin-left: auto;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (min-width: 768px){
+    margin-left: 93px;
+    }
+
+  @media screen and (min-width: 1200px){
     display: flex;
-    margin-left: auto;
-    justify-content: center;
-    text-align: center;
+    }
+
   }
+
+
 
   .item-contact__commun {
     color: var(--contact-color);
@@ -21,14 +31,28 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (max-width: 768px){
+font-size: 12px;
+line-height: calc(14/12);
+letter-spacing: 0.02em;
+  } 
   }
   
   
   .item-contact__svg-mail {
     margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (max-width: 768px){
+    margin-right: 8px;
+      } 
   }
   .item-contact__svg-tell {
     margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (max-width: 768px){
+    margin-right: 8px;
+      } 
   }

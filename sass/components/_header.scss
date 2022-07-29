@@ -5,6 +5,18 @@
     padding-bottom: 25px;
    display: flex;
    justify-content: center;
+
+   @media screen and (max-width: 768px){
+    padding-top: 26px;
+    padding-bottom: 26px;
+  } 
+
+   @media screen and (max-width: 480px){
+    padding-top: 16px;
+    padding-bottom: 16px;
+  } 
+
+ 
     }
     
     .header__box{
